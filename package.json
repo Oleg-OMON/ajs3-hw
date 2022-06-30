@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "build": "webpack --mode production",
+    "coverage": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
