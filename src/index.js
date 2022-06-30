@@ -1,5 +1,2 @@
-import unitHealth from "./health";
-
-console.log('worked');
-
-unitHealth(65);
+import './app';
+import './style.css';
