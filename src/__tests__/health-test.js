@@ -1,4 +1,4 @@
-import unitHealth from "./js/health.js";
+import unitHealth from "../js/health";
 
 test('should wounded', () => {
     const result = unitHealth({ name: 'Маг', health: 40 });
