@@ -1,4 +1,4 @@
-import unitHealth from "../health";
+import unitHealth from "./js/health";
 
 test('should wounded', () => {
     const result = unitHealth({ name: 'Маг', health: 40 });
@@ -18,18 +18,18 @@ test.each([
 
 test('Parameter is not a number!', () => {
     expect(() => {
-      showHealth({});
+      unitHealth({});
     }).toThrow();
   });
   
   test('Parameter is not a number!', () => {
     expect(() => {
-      showHealth({ name: 'Маг', health: 'mistake' });
+      unitHealth({ name: 'Маг', health: 'mistake' });
     }).toThrow();
   });
   
   test('Parameter is not a number!', () => {
     expect(() => {
-      showHealth({ name: 'Маг', health: -10 });
+      unitHealth({ name: 'Маг', health: -10 });
     }).toThrow();
   });
